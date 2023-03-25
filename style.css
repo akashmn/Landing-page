@@ -1,0 +1,138 @@
+/*##### GLOBAL #######*/
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+
+    background-image: url('Bg\ Image.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/*######## NAVBAR ########*/
+.navbar{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    padding : 1em;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.nav-link li{
+    margin-right: 50px;
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link li:hover{
+    transform: scale(1.1);
+}
+
+header{
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+    background-color: #000000;
+    border-radius: 10px;
+    
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #000000;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.header-content h1{
+    font-size: 7vmin ;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+    margin: 10px;
+    height: 100%;
+    padding: 8px 15px;
+    background: #ffff;
+    color: #000000;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.ctn:hover{
+    color: white;
+    background-color: #000000;
+}
+
+.logo{
+    font-size:2em;
+    @media screen and (max-width:850px) {
+        font-size:1rem;
+}
+}
+
+.footer{
+    display: flex;
+    background-color:#000000;
+    padding: 2em;
+    opacity: 50%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*########## MOBILE SCREEN #########*/
+/*@media only screen and (max-width:850px){
+    .logo{
+        font-size:1rem;
+    }
+
+    
+        .nav-link{
+            display: flex;
+            flex-direction:column;
+            float: right;
+            
+        }
+    header{
+        height: 50em;
+        width:18em;
+        
+    }
+}
+ 
